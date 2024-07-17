@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: rui4a5ol7-python-repository
+spec:
+  url: https://github.com/RHTAP-RHDH/rui4a5ol7-python

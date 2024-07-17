@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: rui4a5ol7-python-gitops
+  description: This is GitOps manifest for rui4a5ol7-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: rui4a5ol7-python
+    janus-idp.io/tekton: rui4a5ol7-python 
+    backstage.io/kubernetes-id: rui4a5ol7-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:rui4a5ol7-python
